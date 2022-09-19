@@ -1,0 +1,21 @@
+.App {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+  background-color: $orange;
+  .card {
+    padding: 12px;
+    font-size: 12px;
+    & > button {
+      outline: none;
+      border: none;
+    }
+  }
+  .btn {
+    background-color: purple;
+    color: white;
+    outline: none;
+    border: none;
+  }
+}
