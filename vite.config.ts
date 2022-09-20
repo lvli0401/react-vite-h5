@@ -3,12 +3,14 @@ import react from '@vitejs/plugin-react';
 import vitePluginImp from 'vite-plugin-imp';
 import legacy from '@vitejs/plugin-legacy';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import postcsspxtoviewport from 'postcss-px-to-viewport';
+import postcsspxtoviewport from 'postcss-px-to-viewport-8-plugin';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    visualizer(),
     tsconfigPaths(),
     // antd按需引入样式
     vitePluginImp({
